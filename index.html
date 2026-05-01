@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="logo">Casa Verde</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#menu">Menü</a></li>
+        <li><a href="#location">Kontakt</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        ☰
+    </button>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+        <h1>Casa Verde</h1>
+        <p>Ein ruhiger Ort für Kaffee, Arbeit und langsame Momente in der Stadt.</p>
+        <button id="scrollBtn" class="btn-secondary" type="button">Standort entdecken</button>
+        <button id="visitBtn" class="btn-primary" type="button">Reservieren</button>
+    </div>
+</header>
+
+<main>
+
+    <!-- ABOUT -->
+    <section class="intro" id="about">
+        <div class="card">
+            <h2>Ein Ort zum Ankommen</h2>
+            <p>Casa Verde ist ein modernes Stadtcafé, das Ruhe in den Alltag bringt. Kaffee, Pflanzen und Zeit – mehr braucht es nicht.</p>
+        </div>
+    </section>
+
+    <!-- IMAGE GRID -->
+    <section class="grid-images" aria-label="Cafe Impressionen">
+        <div class="img big" role="img" aria-label="Casa Verde Innenraum"></div>
+        <div class="img small-1" role="img" aria-label="Kaffee Detail"></div>
+        <div class="img small-2" role="img" aria-label="Café Atmosphäre"></div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story">
+        <div class="text-block">
+            <h2>Unsere Idee</h2>
+            <p>Casa Verde verbindet minimalistisches Design mit natürlicher Ruhe. Ein Raum für Fokus, Gespräche und guten Kaffee.</p>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h2>Menü</h2>
+
+        <ul class="menu-grid">
+            <li class="menu-card">
+                <h3>Espresso</h3>
+                <p>2.20€</p>
+            </li>
+
+            <li class="menu-card">
+                <h3>Flat White</h3>
+                <p>3.90€</p>
+            </li>
+
+            <li class="menu-card">
+                <h3>Cappuccino</h3>
+                <p>3.50€</p>
+            </li>
+
+            <li class="menu-card">
+                <h3>Matcha Latte</h3>
+                <p>4.40€</p>
+            </li>
+
+            <li class="menu-card">
+                <h3>Iced Americano</h3>
+                <p>3.80€</p>
+            </li>
+
+            <li class="menu-card">
+                <h3>Cinnamon Bun</h3>
+                <p>3.60€</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location" id="location">
+        <div class="location-card">
+
+            <h2>Casa Verde in Bonn</h2>
+
+            <div class="info-grid">
+
+                <div class="info-item">
+                    <h3>Adresse</h3>
+                    <p>Casa Verde Café</p>
+                    <p>Grüner Weg 12</p>
+                    <p>53111 Bonn</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo – So</p>
+                    <p>08:00 – 19:00</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Kontakt</h3>
+                    <p>hello@casaverde.cafe</p>
+                    <p>0228 123456</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Casa Verde — Coffee, calm and city life</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
