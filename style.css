@@ -115,12 +115,14 @@ body {
     color: var(--text);
 }
 
+/* LINKS WRAPPER */
 .nav-links {
     display: flex;
     gap: 25px;
     list-style: none;
 }
 
+/* LINK BASIS */
 .nav-links a {
     color: var(--text);
     text-decoration: none;
@@ -129,11 +131,7 @@ body {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    opacity: 1;
-    color: var(--accent);
-}
-
+/* UNDERLINE BASIS */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -147,10 +145,37 @@ body {
     transition: 0.3s;
 }
 
+/* HOVER */
+.nav-links a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
 .nav-links a:hover::after {
     width: 100%;
 }
 
+/* ACTIVE (normale Anzeige) */
+.nav-links a.active {
+    color: var(--accent);
+    opacity: 1;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* TEMP INACTIVE (wird durch JS beim Hover gesetzt) */
+.nav-links a.temp-inactive {
+    color: var(--text);
+    opacity: 0.75;
+}
+
+.nav-links a.temp-inactive::after {
+    width: 0;
+}
+
+/* HAMBURGER */
 .hamburger {
     display: none;
     font-size: 1.9rem;
@@ -166,15 +191,16 @@ body {
 
 
 /* =========================
-   HERO
+   HERO - Pg 1
 ========================= */
 .hero {
     height: 100vh;
     display: flex;
     align-items: flex-end;
+    justify-content: left;
 
+    text-align: left;
     padding: 80px 20px;
-    position: relative;
 }
 
 .hero-overlay {
@@ -189,16 +215,19 @@ body {
 .hero-content {
     position: relative;
     color: var(--text);
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .hero h1 {
     font-family: "Playfair Display", serif;
     font-size: 5rem;
+    margin-bottom: var(--space-sm);
 }
 
 
-
+.hero p {
+    margin-bottom: var(--space-xs);
+}
 /* buttons */
 .btn-primary {
     background: var(--accent);
@@ -210,7 +239,7 @@ body {
 
     cursor: pointer;
     transition: 0.25s ease;
-    margin-left: 8px;
+    margin-left: 2px;
 
 }
 
@@ -229,8 +258,8 @@ body {
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
     filter: brightness(1.1);
+    border-color:#fff;
 }
 
 .btn-secondary:hover {
@@ -243,7 +272,7 @@ body {
 
 
 /* =========================
-   SECTIONS
+   SECTIONS 
 ========================= */
 h2 {
     margin-bottom: var(--space-sm);
@@ -262,7 +291,7 @@ h2 {
 
 
 /* =========================
-   CARD
+   CARD Pg 2
 ========================= */
 .card {
     max-width: 800px;
@@ -325,7 +354,7 @@ h2 {
 
 
 /* =========================
-   MENU
+   MENU Pg 3
 ========================= */
 .menu {
     background: var(--menu-gradient);
@@ -387,7 +416,7 @@ h2 {
 
 
 /* =========================
-   LOCATION
+   LOCATION Pg 4
 ========================= */
 .location {
     min-height: 85vh;

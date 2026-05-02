@@ -31,19 +31,6 @@ if (hamburger && navLinks) {
 }
 
 
-// =========================
-// Smooth Scroll Button
-// =========================
-const scrollBtn = document.getElementById("scrollBtn");
-const locationSection = document.getElementById("location");
-
-if (scrollBtn && locationSection) {
-    scrollBtn.addEventListener("click", () => {
-        locationSection.scrollIntoView({
-            behavior: "smooth"
-        });
-    });
-}
 
 
 // =========================
@@ -110,4 +97,21 @@ function goTo(url) {
 
 document.getElementById("visitBtn").addEventListener("click", function () {
     goTo("https://de.wikipedia.org");
+});
+
+// ja links und so
+const links = document.querySelectorAll(".nav-links a");
+
+links.forEach(link => {
+    link.addEventListener("mouseenter", () => {
+        links.forEach(l => {
+            if (l.classList.contains("active")) {
+                l.classList.add("temp-inactive");
+            }
+        });
+    });
+
+    link.addEventListener("mouseleave", () => {
+        links.forEach(l => l.classList.remove("temp-inactive"));
+    });
 });
