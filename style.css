@@ -446,6 +446,7 @@ h2 {
     max-width: 1600px;
     width: 100%;
     padding: 80px;
+    margin-top: var(--space-mdd);
 
     background: var(--surface);
     border: 1px solid var(--border);
@@ -459,7 +460,7 @@ h2 {
 }
 
 .location-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     border-color: var(--border-hover);
 }
 
